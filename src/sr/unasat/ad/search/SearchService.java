@@ -1,6 +1,10 @@
 package sr.unasat.ad.search;
 
 public class SearchService {
+    //Huiswerk
+    //linearySearch(String term, String array) --> return een nette text(String) met de uitkomst
+    //binearySearch(term, array)
+
 
     //Time Complexity: O(n)
     static int linearSearch(int term, int[] data) {
@@ -12,12 +16,9 @@ public class SearchService {
         return -1; //term not found
     }
 
-    //linearySearch(String term, String array) --> return een nette text(String) met de uitkomst
-    //binearySearch(term, array)
-
     // iterative
     //Time Complexity: O(log n)
-    static int binearySearchIterative(int[] array, int term) {
+    static int binarySearchIterative(int[] array, int term) {
         int left = 0; // min index
         int right = array.length - 1; // max index
         while (left <= right) {
@@ -36,7 +37,7 @@ public class SearchService {
 
     // recursive
     //Time Complexity: O(log n)
-    static int binearySearchRecursive(int[] array, int term, int left, int right) {
+    static int binarySearchRecursive(int[] array, int term, int left, int right) {
         if (left > right) {
             return -1;
         }
@@ -45,10 +46,10 @@ public class SearchService {
             return array[mid]; // return array index of search term
         } else if (term < array[mid]) { // search term is smaller than mid point value
             // right bound = mid - 1;
-            return binearySearchRecursive(array, term, left, mid - 1); // set right bound
+            return binarySearchRecursive(array, term, left, mid - 1); // set right bound
         } else {
             // left bound = mid + 1;
-            return binearySearchRecursive(array, term, mid + 1, right); // set left bound
+            return binarySearchRecursive(array, term, mid + 1, right); // set left bound
         }
     }
 }
