@@ -23,11 +23,17 @@ public class SelectionSort {
 
             // Swap the found minimum element with the first
             // element
+            //swap(array, min_idx, i);
             int temp = array[min_idx];
             array[min_idx] = array[i];
             array[i] = temp;
         }
     }
 
+/*    private static void swap(int[] array, int i, int j) {
+        int tmp = array[i];
+        array[i] = array[j];
+        array[j] = tmp;
+    }*/
 
 }
