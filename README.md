@@ -17,3 +17,4 @@
 3. Implementeer de insert sort.
 4. Implementeer een sorting algorithm voor objecten(bv Person). Doe dit voor alle simple sort algorithms.
 5. Neem hoofdstuk 1 t/m 3 helemaal door en kom met vragen
+6. Oefenen met genummerde cups thuis. Komend college krijgt iedereen een beurt om te sorteren met cups.
