@@ -11,7 +11,7 @@
 7. Neem hoofdstuk 3 simple sorts door
 
 **Huiswerk 16-6-2018:**
-1. Implementeer de bubble sort.
+1. Implementeer de bubble sort met twee for loops
 2. Implementeer de selection sort.
 3. Implementeer de insert sort.
-4. Implementeer een sorting object algorithm(insert sort).
+4. Implementeer een sorting algorithm voor objecten(bv search). Doe dit voor alle simple sorts.
