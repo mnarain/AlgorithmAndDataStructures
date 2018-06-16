@@ -3,14 +3,15 @@
 
 **Huiswerk 13-6-2018:** 
 1. Wat is een algorithm?
-2. wat is een datastructure?
-3. Pas de linearySearch aan(zoek naar een text).
-4. Bouw de binearySearch(SearchService).
-5. Pas de binearySearch aan(zoek naar een text).
-6. Neem hoofdstuk 3 simple sorts door
+2. Wat is een datastructure?
+3. Implementeer de binary search(SearchService).
+4. Pas de linear search aan(zoek naar een text).
+5. Implementeer de binary search(SearchService).
+6. Pas de binary search aan(zoek naar een text).
+7. Neem hoofdstuk 3 simple sorts door
 
 **Huiswerk 16-6-2018:**
-1.
-2.
-3.
-4.
+1. Implementeer de bubble sort.
+2. Implementeer de selection sort.
+3. Implementeer de insert sort.
+4. Implementeer een sorting object algorithm(insert sort).
