@@ -2,7 +2,7 @@ package sr.unasat.ad.search;
 
 public class SearchService {
 
-    //linear search O(n)
+    //Time Complexity: O(n)
     static int linearSearch(int term, int[] data) {
         for (int i = 0; i < data.length; i++) {
             if (term == data[i]) {
@@ -16,7 +16,7 @@ public class SearchService {
     //binearySearch(term, array)
 
     // iterative
-    //bineary search O(log n)
+    //Time Complexity: O(log n)
     static int binearySearchIterative(int[] array, int term) {
         int left = 0; // min index
         int right = array.length - 1; // max index
@@ -35,7 +35,7 @@ public class SearchService {
     }
 
     // recursive
-    //bineary search O(log n)
+    //Time Complexity: O(log n)
     static int binearySearchRecursive(int[] array, int term, int left, int right) {
         if (left > right) {
             return -1;

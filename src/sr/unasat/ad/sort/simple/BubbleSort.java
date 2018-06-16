@@ -2,8 +2,14 @@ package sr.unasat.ad.sort.simple;
 
 public class BubbleSort {
 
-    //O(n2) exponential time complexity
-    static int[] bubbleSort(int[] array) {
+    /*
+    Time Complexity: O(n^2)
+    Worst and Average Case Time Complexity: O(n*n). Worst case occurs when array is reverse sorted.
+    Best Case Time Complexity: O(n). Best case occurs when array is already sorted.
+    Auxiliary Space: O(1)
+    Boundary Cases: Bubble sort takes minimum time (Order of n) when elements are already sorted.
+    */
+    static int[] sort(int[] array) {
         boolean isSorted = false;
         int lastUnsorted = array.length - 1; // set index of the last element
         while (!isSorted) {
