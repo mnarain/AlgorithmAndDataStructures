@@ -2,6 +2,7 @@ package sr.unasat.ad.sort.simple;
 
 public class BubbleSort {
 
+    //O(n2) exponential time complexity
     static int[] bubbleSort(int[] array) {
         boolean isSorted = false;
         int lastUnsorted = array.length - 1; // set index of the last element
