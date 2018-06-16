@@ -16,6 +16,16 @@ public class SearchService {
         return -1; //term not found
     }
 
+    static String linearSearchString(String term, String[] data) {
+        for (int i = 0; i < data.length; i++) {
+            if (term.equals(data[i])) {
+                return "De zoekterm " + term + "is gevonden bij index: " + i; //term found return index
+            }
+        }
+        return "De zoekterm komt niet voor in deze dataset"; //term not found
+    }
+
+
     // iterative
     //Time Complexity: O(log n)
     static int binarySearchIterative(int[] array, int term) {
@@ -25,7 +35,7 @@ public class SearchService {
             int mid = left + ((right - left) / 2);
 
             if (array[mid] == term) { // search term found
-                return array[mid]; // return array index of search term
+                return mid; // return array index of search term
             } else if (term < array[mid]) { // search term is smaller than mid point value
                 right = mid - 1; // set right bound
             } else {
@@ -43,7 +53,7 @@ public class SearchService {
         }
         int mid = left + ((right - left) / 2);
         if (array[mid] == term) { // search term found
-            return array[mid]; // return array index of search term
+            return mid; // return array index of search term
         } else if (term < array[mid]) { // search term is smaller than mid point value
             // right bound = mid - 1;
             return binarySearchRecursive(array, term, left, mid - 1); // set right bound

@@ -14,7 +14,7 @@ public class BubbleSort {
         int lastUnsorted = array.length - 1; // set index of the last element
         while (!isSorted) {
             /*the for loop lets the highest value bubble up
-            to make sure that the higesth index contains the higest value*/
+            to make sure that the highest index contains the highest value*/
             for (int i = 0; i < lastUnsorted; i++) {
                /* if the current index value is bigger than
                 the next index value, swap the index values*/
