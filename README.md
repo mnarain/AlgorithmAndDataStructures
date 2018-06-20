@@ -4,12 +4,13 @@
 **Huiswerk 13-6-2018:** 
 1. Wat is een algorithm?
 2. Wat is een datastructure?
-3. Implementeer de binary search(SearchService).
-4. Pas de linear search aan(zoek naar een text).
-5. Implementeer de binary search(SearchService).
-6. Pas de binary search aan(zoek naar een text).
-7. Implementeer een search algorithm voor objecten(bv Person). Doe dit voor linear en binary search algorithms.
-7. Neem hoofdstuk 3 simple sorts door
+3. Wat is de Big O notation
+4. Implementeer de binary search(SearchService).
+5. Pas de linear search aan(zoek naar een text).
+6. Implementeer de binary search(SearchService).
+7. Pas de binary search aan(zoek naar een text).
+8. Implementeer een search algorithm voor objecten(bv Person). Doe dit voor linear en binary search algorithms.
+9. Neem hoofdstuk 3 simple sorts door
 
 **Huiswerk 16-6-2018:**
 1. Implementeer de bubble sort met twee for loops
