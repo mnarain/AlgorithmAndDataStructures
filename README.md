@@ -4,7 +4,7 @@
 **Huiswerk 13-6-2018:** 
 1. Wat is een algorithm?
 2. Wat is een datastructure?
-3. Wat is de Big O notation
+3. Wat is de Big O notation?
 4. Implementeer de binary search(SearchService).
 5. Pas de linear search aan(zoek naar een text).
 6. Implementeer de binary search(SearchService).
