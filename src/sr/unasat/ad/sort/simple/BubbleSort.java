@@ -15,11 +15,11 @@ public class BubbleSort {
         while (!isSorted) {
             /*the for loop lets the highest value bubble up
             to make sure that the highest index contains the highest value*/
-            for (int i = 0; i < lastUnsorted; i++) {
+            for (int currentIndex = 0; currentIndex < lastUnsorted; currentIndex++) {
                /* if the current index value is bigger than
                 the next index value, swap the index values*/
-                if (array[i] > array[i + 1]) {
-                    swap(array, i, i + 1);
+                if (array[currentIndex] > array[currentIndex + 1]) {
+                    swap(array, currentIndex, currentIndex + 1);
                 }
             }
             lastUnsorted--;
@@ -27,10 +27,10 @@ public class BubbleSort {
         return array;
     }
 
-    private static void swap(int[] array, int i, int j) {
-        int tmp = array[i];
-        array[i] = array[j];
-        array[j] = tmp;
+    private static void swap(int[] array, int currentIndex, int nextIndex) {
+        int tmp = array[currentIndex];
+        array[currentIndex] = array[nextIndex];
+        array[nextIndex] = tmp;
     }
 
 }

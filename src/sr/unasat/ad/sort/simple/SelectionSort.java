@@ -10,30 +10,39 @@ public class SelectionSort {
     when memory write is a costly operation.
     */
 
-    static void sort(int[] array) {
+    static int[] sort(int[] array) {
         int size = array.length;
-
         // One by one move boundary of unsorted subarray
-        for (int i = 0; i < size - 1; i++) {
+        for (int leftBound = 0; leftBound < size - 1; leftBound++) {
             // Find the minimum element in unsorted array
-            int min_idx = i;
-            for (int j = i + 1; j < size; j++)
-                if (array[j] < array[min_idx])
-                    min_idx = j;
-
-            // Swap the found minimum element with the first
-            // element
-            //swap(array, min_idx, i);
-            int temp = array[min_idx];
-            array[min_idx] = array[i];
-            array[i] = temp;
+            int unsortedMinimum = leftBound;
+            for (int currentIndex = leftBound + 1; currentIndex < size; currentIndex++) {
+                if (array[currentIndex] < array[unsortedMinimum]) {
+                    unsortedMinimum = currentIndex;
+                }
+            }
+            if (leftBound != unsortedMinimum) {
+                swap(array, leftBound, unsortedMinimum);
+            }
         }
+        return array;
     }
 
-/*    private static void swap(int[] array, int i, int j) {
-        int tmp = array[i];
-        array[i] = array[j];
-        array[j] = tmp;
-    }*/
+    private static void swap(int[] array, int leftBound, int unsortedMinimum) {
+        // Swap the found minimum element with the first
+        // element
+        int temp = array[unsortedMinimum];
+        array[unsortedMinimum] = array[leftBound];
+        array[leftBound] = temp;
+    }
+
+    public static void main(String[] args) {
+        int[] array = {105, 2, 30, 4, 3000, 5, 70, 14, 7, 0};
+        System.out.println(array);
+        int[] sortedArray = sort(array);
+        for (int element : sortedArray) {
+            System.out.println(element);
+        }
+    }
 
 }
