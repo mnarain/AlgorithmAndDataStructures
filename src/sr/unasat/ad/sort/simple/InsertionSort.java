@@ -10,21 +10,28 @@ public class InsertionSort {
       And it takes minimum time (Order of n)
       when elements are already sorted.
      */
-    void sort(int[] array) {
+    static int[] sort(int[] array) {
         int size = array.length;
-        for (int i = 1; i < size; ++i) {
-            int key = array[i];
-            int j = i - 1;
+        for (int firstUnsortedIndex = 1; firstUnsortedIndex < size; ++firstUnsortedIndex) {
+            int firstUnsortedValue = array[firstUnsortedIndex];
+            int sortedIndex = firstUnsortedIndex - 1;
 
-            /* Move elements of array[0..i-1], that are
-               greater than key, to one position ahead
+            /* Move elements of array[0..firstUnsortedIndex-1], that are
+               greater than firstUnsortedValue, to one position ahead
                of their current position */
-            while (j >= 0 && array[j] > key) {
-                array[j + 1] = array[j];
-                j = j - 1;
+            while (sortedIndex >= 0 && array[sortedIndex] > firstUnsortedValue) {
+                //swap values of sorted part that are higher
+                array[sortedIndex + 1] = array[sortedIndex];
+                sortedIndex = sortedIndex - 1;
             }
-            array[j + 1] = key;
+            array[sortedIndex + 1] = firstUnsortedValue;
         }
+        return array;
+    }
+
+
+    public static void main(String[] args) {
+
     }
 
 }
