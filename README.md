@@ -19,3 +19,10 @@
 4. Implementeer een sorting algorithm voor objecten(bv Person). Doe dit voor alle simple sort algorithms.
 5. Neem hoofdstuk 1 t/m 3 helemaal door en kom met vragen
 6. Oefenen met genummerde cups thuis. Komend college krijgt iedereen een beurt om te sorteren met cups.
+
+**Huiswerk 23-6-2018:**
+1. Bouw een eigen compare method die 2 Strings kan vergelijken en als resultaat -1, 0 , +1 returned.
+1. Reseach de advanced sorts(Hoofdstuk 7) : Shell, Quick en Radix sort
+2. Speel de advanced sorts na met cups
+3. implementeer de advanced sorts
+4. Kom met vragen betreffende hoofdstuk 1 t/m 3 en 7.
