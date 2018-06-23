@@ -1,5 +1,8 @@
 package sr.unasat.ad.sort.simple;
 
+import sr.unasat.ad.common.Swap;
+import sr.unasat.ad.entities.Person;
+
 public class BubbleSort {
 
     /*
@@ -19,7 +22,7 @@ public class BubbleSort {
                /* if the current index value is bigger than
                 the next index value, swap the index values*/
                 if (array[currentIndex] > array[currentIndex + 1]) {
-                    swap(array, currentIndex, currentIndex + 1);
+                    Swap.execute(array, currentIndex, currentIndex + 1);
                 }
             }
             lastUnsorted--;
@@ -27,10 +30,22 @@ public class BubbleSort {
         return array;
     }
 
-    private static void swap(int[] array, int currentIndex, int nextIndex) {
-        int tmp = array[currentIndex];
-        array[currentIndex] = array[nextIndex];
-        array[nextIndex] = tmp;
+
+    static Person[] sortPersonList(Person[] array) {
+        int lastUnsorted = array.length - 1; // set index of the last element
+        while (lastUnsorted > 0) {
+            /*the for loop lets the highest value bubble up
+            to make sure that the highest index contains the highest value*/
+            for (int currentIndex = 0; currentIndex < lastUnsorted; currentIndex++) {
+               /* if the current index value is bigger than
+                the next index value, swap the index values*/
+                if (array[currentIndex].getFullname().compareToIgnoreCase(array[currentIndex + 1].getFullname()) > 0) {
+                    Swap.execute(array, currentIndex, currentIndex + 1);
+                }
+            }
+            lastUnsorted--;
+        }
+        return array;
     }
 
 }
