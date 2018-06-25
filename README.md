@@ -29,7 +29,7 @@
 5. Kom met vragen betreffende hoofdstuk 1 t/m 3 en 7.
 
 
-**Quiz nummer 1 4 mei 2018 duur: 40min**
+**Quiz nummer 4 mei 2018 duur: 40min**
 Hoofdstuk 1 t/m 3 en 7
 - Big O notation
 - Linear & binary search
