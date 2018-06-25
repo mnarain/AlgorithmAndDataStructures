@@ -22,7 +22,16 @@
 
 **Huiswerk 23-6-2018:**
 1. Bouw een eigen compare method die 2 Strings kan vergelijken en als resultaat -1, 0 , +1 returned.
-1. Reseach de advanced sorts(Hoofdstuk 7) : Shell, Quick en Radix sort
-2. Speel de advanced sorts na met cups
-3. implementeer de advanced sorts
-4. Kom met vragen betreffende hoofdstuk 1 t/m 3 en 7.
+   Implementeer het voor alle simple sorts, linear en binary search.
+2. Reseach de advanced sorts(Hoofdstuk 7) : Shell, Quick en Radix sort
+3. Speel de advanced sorts na met cups
+4. Implementeer de advanced sorts
+5. Kom met vragen betreffende hoofdstuk 1 t/m 3 en 7.
+
+
+**Quiz nummer 1 4 mei 2018 duur: 40min**
+Hoofdstuk 1 t/m 3 en 7
+- Big O notation
+- Linear & binary search
+Simple sorts: Bubble, selection & insertion sort
+Advanced sorts: Shell, Quick en Radix sort
