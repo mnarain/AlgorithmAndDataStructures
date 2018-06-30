@@ -10,7 +10,7 @@ public class InsertionSort {
       And it takes minimum time (Order of n)
       when elements are already sorted.
      */
-    static int[] sort(int[] array) {
+    public static int[] execute(int[] array) {
         int size = array.length;
         for (int firstUnsortedIndex = 1; firstUnsortedIndex < size; ++firstUnsortedIndex) {
             int firstUnsortedValue = array[firstUnsortedIndex];

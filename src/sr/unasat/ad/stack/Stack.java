@@ -4,8 +4,7 @@ package sr.unasat.ad.stack;
  * Created by mnarain on 6/28/2017.
  */
 public interface Stack {
-    void push(long j); // add item to the stack
-
+    void push(int value); // put item on top of stack
     long pop(); // take item from top of stack
 
     long peek(); // peek at top of stack
