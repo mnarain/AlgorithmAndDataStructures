@@ -28,10 +28,18 @@
 4. Implementeer de advanced sorts
 5. Kom met vragen betreffende hoofdstuk 1 t/m 3 en 7.
 
+**Huiswerk 04-7-2018:**
+1. Recursive function: tafel van 10 (1 t/m 10)
+2. Recursive function: elke tafel(1 t/m 10)
+3. Maak applicatie die m.b.v. een circulair queue patient objecten bij de dokter kan oproepen volgens beurt
+4. Maak applicatie die m.b.v. een priority queue voertuig objecten laat oprijden.(normaal, ambulance, brandweer, politie) 
+5. Review Queues & Stacks hoofdstuk 4 en 6 recursion (binary search en vereisten voor een recursive method).
+6. Neem hoofdstuk 5 linkedlist door.
+7. Challenge: Bedenk een toepassing uit de praktijk m.b.t. stacks & queues en bouw deze.
 
-**Quiz nummer 4 mei 2018 duur: 40min**
-Hoofdstuk 1 t/m 3 en 7
+**Quiz nummer 1 op 11 juli 2018 duur: 40min**
+Hoofdstuk 1 t/m 4 
 - Big O notation
 - Linear & binary search
-Simple sorts: Bubble, selection & insertion sort
-Advanced sorts: Shell, Quick en Radix sort
+- Simple sorts: Bubble, selection & insertion sort
+- Stacks & Queues
