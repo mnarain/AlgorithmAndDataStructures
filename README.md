@@ -55,3 +55,5 @@ Requirments:
 5. Men moet instaat zijn om een overzicht(wachtlijst) te zien van de aangemelde personen in het volgsysteem.
 
 Tip: maak gebruik van een binary tree & een linkedlist.
+
+Challenge: Het toevoegen van duplicaat bestanden is niet toegestaan.
