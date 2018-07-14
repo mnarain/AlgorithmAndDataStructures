@@ -57,3 +57,5 @@ Requirments:
 Tip: maak gebruik van een binary tree & een linkedlist.
 
 Challenge: Het toevoegen van duplicaat bestanden is niet toegestaan.
+
+HW2: questions beantwoorden van binary tree blz 423
