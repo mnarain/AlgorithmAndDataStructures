@@ -37,9 +37,21 @@
 6. Neem hoofdstuk 5 linkedlist door.
 7. Challenge: Bedenk een toepassing uit de praktijk m.b.t. stacks & queues en bouw deze.
 
-**Quiz nummer 1 op 11 juli 2018 duur: 40min**
+**Quiz nummer 1 op 13 juli 2018 duur: 40min**
 Hoofdstuk 1 t/m 4 
 - Big O notation
 - Linear & binary search
 - Simple sorts: Bubble, selection & insertion sort
-- Stacks & Queues
+- Stacks & Queues 
+
+**Huiswerk 14-7-2018:**
+Bouw een patient registratie systeem voor een ziekenhuis.
+De klant heeft heel wat patient bestanden die ongeordend zijn.
+Requirments:
+1. Het zoeken i.d. applicatie dient snel te kunnen verlopen voor opvraag van patient gegevens.
+2. Er dient een patientregistratie overzicht in ascending of descending order getoond te kunnen worden.
+3. Men moet corrupte patient bestanden kunnen verwijderen uit het systeem.
+4. Er dient een volgsysteem te worden ingebouwd voor poli gebruik.
+5. Men moet instaat zijn om een overzicht(wachtlijst) te zien van de aangemelde personen in het volgsysteem.
+
+Tip: maak gebruik van een binary tree & een linkedlist.
