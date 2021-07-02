@@ -10,24 +10,23 @@ import sr.unasat.ad.queue.circular.validation.impl.TweedeWachtwoord;
  * Created by mnarain on 7/5/2017.
  */
 public class WachtwoordService {
-    private Queue priorityQueue;
+    private Queue queue;
 
     public WachtwoordService() {
-        this.priorityQueue = generateQueue();
+        this.queue = generateQueue();
     }
 
     public boolean loginUser(String[] wachtwoordenLijst) {
-        if (priorityQueue.isEmpty()) {
+        if (queue.isEmpty()) {
             return false;
         }
         for (int index = 0; index < wachtwoordenLijst.length; index++) {
 
-            if (priorityQueue.peekFront() != null && priorityQueue.peekFront().execute(wachtwoordenLijst[index])) {
-                priorityQueue.remove();
+            if (queue.peekFront() != null && queue.peekFront().execute(wachtwoordenLijst[index])) {
+                queue.remove();
                 continue;
-            } else {
-                return false;
             }
+            return false;
         }
         return true;
     }

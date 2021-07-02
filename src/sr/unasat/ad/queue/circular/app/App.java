@@ -9,7 +9,7 @@ import sr.unasat.ad.queue.circular.services.WachtwoordService;
 public class App {
     public static void main(String[] args) {
 
-        String[] wachtwoordenLijst = {"eerste", "tweede", "derde"};
+        String[] wachtwoordenLijst = {"eerste", "tweede=85rt8", "derde"};
 
         WachtwoordService wachtwoordService = new WachtwoordService();
         if (wachtwoordService.loginUser(wachtwoordenLijst)) {

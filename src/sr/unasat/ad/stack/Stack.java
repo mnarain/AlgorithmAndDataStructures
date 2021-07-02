@@ -2,6 +2,7 @@ package sr.unasat.ad.stack;
 
 /**
  * Created by mnarain on 6/28/2017.
+ * ADT Abstract Data Type. hier word alleen gekeken naar de functionaliteit. niet naar de implementatie
  */
 public interface Stack {
     void push(int value); // put item on top of stack

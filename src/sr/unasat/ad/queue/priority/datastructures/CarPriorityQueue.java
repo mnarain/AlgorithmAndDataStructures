@@ -1,44 +1,43 @@
 package sr.unasat.ad.queue.priority.datastructures;
 
 
-import sr.unasat.ad.queue.priority.validation.Wachtwoord;
-
+import sr.unasat.ad.queue.priority.entities.Car;
 /**
  * Created by mnarain on 7/7/2017.
  */
-public class PriorityQueue {
+public class CarPriorityQueue {
     private int maxSize;
-    private Wachtwoord[] queArray;
+    private Car[] queArray;
     private int front;
     private int rear;
     private int nItems;
 
     //--------------------------------------------------------------
-    public PriorityQueue(int maxSize) // constructor
+    public CarPriorityQueue(int maxSize) // constructor
     {
         this.maxSize = maxSize;
-        queArray = new Wachtwoord[this.maxSize];
+        queArray = new Car[this.maxSize];
         front = 0;
         rear = -1;
         nItems = 0;
     }
 
     //--------------------------------------------------------------
-    public void insert(Wachtwoord wachtwoord) // put item at rear of queue
+    public void insert(Car car) // put item at rear of queue
     {
-        int j;
-        if (nItems == 0) // if no items,
-            queArray[nItems++] = wachtwoord; // insert at 0
-        else // if items,
+        int currentIndex;
+        if (nItems == 0) { // if no items,
+            queArray[nItems++] = car; // insert at 0
+        } else // if items,
         {
-            for (j = nItems - 1; j >= 0; j--) // start at end,
+            for (currentIndex = nItems - 1; currentIndex >= 0; currentIndex--) // start at end,
             {
-                if (wachtwoord.getPriority() < queArray[j].getPriority()) // if new item larger,
-                    queArray[j + 1] = queArray[j]; // shift upward
+                if (car.getPriority() < queArray[currentIndex].getPriority()) // if new item larger,
+                    queArray[currentIndex + 1] = queArray[currentIndex]; // shift upward
                 else // if smaller,
                     break; // done shifting
             } // end for
-            queArray[j + 1] = wachtwoord; // insert it
+            queArray[currentIndex + 1] = car; // insert it
             nItems++;
         } // end else (nItems > 0)
     } // end insert()
@@ -46,9 +45,9 @@ public class PriorityQueue {
 
 
     //--------------------------------------------------------------
-    public Wachtwoord remove() // take item from front of queue
+    public Car remove() // take item from front of queue
     {
-        Wachtwoord temp = queArray[front];//3 // get value and incr front
+        Car temp = queArray[front];//3 // get value and incr front
         queArray[front] = null;//3 removed
         if (front + 1 == maxSize) { // deal with wraparound
             front = 0;
@@ -60,7 +59,7 @@ public class PriorityQueue {
     }
 
     //--------------------------------------------------------------
-    public Wachtwoord peekFront() // peek at front of queue
+    public Car peekFront() // peek at front of queue
     {
         return queArray[front];
     }

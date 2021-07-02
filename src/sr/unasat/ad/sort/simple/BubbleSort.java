@@ -22,10 +22,18 @@ public class BubbleSort {
                /* if the current index value is bigger than
                 the next index value, swap the index values*/
                 if (array[currentIndex] > array[currentIndex + 1]) {
-                    Swap.execute(array, currentIndex, currentIndex + 1);
+                //    Swap.execute(array, currentIndex, currentIndex + 1);
+                    // Swap the found minimum element with the first
+                    // element
+                    int temp = array[currentIndex + 1];
+                    array[currentIndex + 1] = array[currentIndex];
+                    array[currentIndex] = temp;
                 }
             }
             lastUnsorted--;
+            if (lastUnsorted < 1) {
+                isSorted = true;
+            }
         }
         return array;
     }

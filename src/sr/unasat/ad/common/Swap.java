@@ -3,12 +3,12 @@ package sr.unasat.ad.common;
 import sr.unasat.ad.entities.Person;
 
 public class Swap {
-
-    public static void execute(int[] array, int i, int j) {
-        int tmp = array[i];
-        array[i] = array[j];
-        array[j] = tmp;
-    }
+                                             //      10               7
+    public static void execute(int[] array, int currentIndex, int nextIndex) {
+        int tmp = array[currentIndex]; //10
+        array[currentIndex] = array[nextIndex]; //7
+        array[nextIndex] = tmp; //10
+    }  //7 10
 
     public static void execute(String[] array, int i, int j) {
         String tmp = array[i];
